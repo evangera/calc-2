@@ -6,23 +6,15 @@
     <script src="calc.js" defer></script>
 </head>
 <body>
-    <p>number1: <input type="text" id="n1">
+    <p>number1: <input type="text" id="n1" onchange="result()"> 
     <button onclick="multiply10()">x10</button>
     <button onclick="multiply100()">x100</button></p>
-    <p>number2: <input type="text" id="n2">
+    <p>number2: <input type="text" id="n2" onchange="result()">
     <button onclick="multiply2()">x2</button>
     <button onclick="multiply4()">x4</button></p>
-    <button onclick="plus()">res</button>
-    <br>
-    <br>
-    <button onclick="plus2()">res+13%</button>
-    <br>
-    <br>
-    <button onclick="plus3()">res+17%</button>
-    <br>
-    <br>
+    <p>result: <input type="text" id="out"></p>
+    <p>res+13%: <input type="text" id="out2"></p>
+    <p>res+17%: <input type="text" id="out3"></p>
     <button onclick="clean()">C</button>
-    <hr>
-    <p id="out">result:</p>
 </body>
 </html>
