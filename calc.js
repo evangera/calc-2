@@ -53,7 +53,6 @@ function multiply10() {
     document.getElementById('out3').value = (result+num2)*1.17;
 }
 function multiply100() {
-    debugger;
     var num1, num2;
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
