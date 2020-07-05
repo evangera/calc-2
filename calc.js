@@ -1,3 +1,17 @@
+function zero() {
+    if (event.target.value == "0") {
+        event.target.value = "";
+    }
+}
+function changeFieldsToZero() {
+    document.getElementById('n1').value = 0;
+    document.getElementById('n2').value = 0;
+    document.getElementById('out').value = 0;
+    document.getElementById('out2').value = 0;
+    document.getElementById('out3').value = 0;
+
+}
+
 function plus() {
     var num1, num2, result;
     num1 = document.getElementById('n1').value;
@@ -39,54 +53,54 @@ function plus3() {
     document.getElementById('out3').value = result;
 }
 function multiply10() {
-    var num1, num2;
+    var num1, num2, result;
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
 
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
 
-    result = num1*10;
+    var result = num1*10;
     document.getElementById('n1').value = result;
     document.getElementById('out').value = result+num2;
     document.getElementById('out2').value = (result+num2)*1.13;
     document.getElementById('out3').value = (result+num2)*1.17;
 }
 function multiply100() {
-    var num1, num2;
+    var num1, num2, result;
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
 
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
 
-    result = num1*100;
+    var result = num1*100;
     document.getElementById('n1').value = result;
     document.getElementById('out').value = result+num2;
     document.getElementById('out2').value = (result+num2)*1.13;
     document.getElementById('out3').value = (result+num2)*1.17;
 }
 function multiply2() {
-    var num2, num1;
+    var num2, num1, result;
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
 
-    result = num2*2;
+    var result = num2*2;
     document.getElementById('n2').value = result;
     document.getElementById('out').value = result+num1;
     document.getElementById('out2').value = (result+num1)*1.13;
     document.getElementById('out3').value = (result+num1)*1.17;
 }
 function multiply4() {
-    var num2, num1;
+    var num2, num1, result;
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
 
-    result = num2*4;
+    var result = num2*4;
     document.getElementById('n2').value = result;
     document.getElementById('out').value = result+num1;
     document.getElementById('out2').value = (result+num1)*1.13;
@@ -94,13 +108,13 @@ function multiply4() {
 }
 function clean() {
     var num1, num2;
-    document.getElementById('n1').value = ""
+    document.getElementById('n1').value = "0"
     num1 = parseInt(num1);
 
-    document.getElementById('n2').value = ""
+    document.getElementById('n2').value = "0"
     num2 = parseInt(num2);
 
-    document.getElementById('out').value = ""
-    document.getElementById('out2').value = ""
-    document.getElementById('out3').value = ""
+    document.getElementById('out').value = "0"
+    document.getElementById('out2').value = "0"
+    document.getElementById('out3').value = "0"
 }
